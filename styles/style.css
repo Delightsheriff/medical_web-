@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter;
 }
 
 ul {
@@ -22,9 +21,7 @@ img {
   height: auto;
 }
 /* HEADER/NAVBAR */
-header {
-  background: var(--neutral-silver, #f5f7fa);
-}
+
 .logo svg {
   width: 30px;
   height: 30px;
@@ -45,24 +42,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #000;
 }
 .test .book {
   display: none;
 }
-/* refined */
 
 .nav-center {
   display: block;
   padding: 1rem;
-  background: var(--neutral-silver, #f5f7fa);
+  background: white;
 }
 
 .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #000;
   padding: 1em;
 }
 
@@ -80,18 +74,19 @@ header {
 }
 .links a {
   display: block;
-  padding: 0.3rem 0;
+  padding: 0.3rem 1em;
   transition: all 0.3s linear;
-  color: var(--text-gray-900, #18191f);
-  font-size: 1rem;
+  color: #fff;
+  font-family: Rufina;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
+  line-height: normal;
+  text-transform: capitalize;
 }
 .links a:hover {
-  background: var(--brand-primary, #4caf4f);
-  padding: 0.3rem 0;
+  background: white;
   transition: all 0.3s linear;
+  color: #771016;
 }
 
 .tog {
@@ -100,6 +95,7 @@ header {
   overflow: hidden;
   display: block;
   transition: all 0.3s linear;
+  background: #771016;
 }
 
 .show-links {
@@ -124,13 +120,14 @@ header {
     display: block;
     color: #fff;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
   }
-  .test .book {
+  .test button {
+    padding: 0.7em;
     background: #771016;
     border: none;
   }
@@ -138,9 +135,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
-    border-bottom: 1px solid #4caf4f;
-    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+    padding: 0;
   }
 
   .nav-toggle {
@@ -152,15 +147,14 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 3em;
-    border: 1px solid #000;
   }
   .links {
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #000;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   .links a {
     transition: none;
