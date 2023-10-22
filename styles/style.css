@@ -106,15 +106,15 @@ img {
 }
 
 .show-links {
-  height: 13rem;
+  height: 12.29rem;
   transition: all 0.3s linear;
 }
 
 /* RESPONSIVE  */
-/* HEADER */
-@media screen and (min-width: 1000px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 800px) {
   .container {
-    max-width: 80%;
+    max-width: 90%;
     padding: 0 0.5em;
     margin: 0 auto;
   }
@@ -123,25 +123,27 @@ img {
     width: 100%;
     top: 0;
     z-index: 100000000000;
-    /* background: whitesmoke; */
+  }
+  .test .book {
+    display: block;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
   }
   .logo a {
     display: flex;
     gap: 0.5em;
     padding: 0;
   }
-  .test .book {
-    display: block;
-    color: #fff;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: capitalize;
+  .nav-toggle {
+    display: none;
   }
   .test button {
-    padding: 0.7em;
+    padding: 0.5em;
     background: #771016;
     border: none;
   }
@@ -151,30 +153,25 @@ img {
     justify-content: space-between;
     padding: 0;
   }
-  .nav-header {
-    padding: 1.5em 0;
-  }
-  .nav-toggle {
-    display: none;
-  }
   .tog {
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0.5em;
   }
   .links {
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
     margin: 0 auto;
-    padding: 0.5em;
+    width: 80%;
   }
   .links a {
     transition: none;
     border-bottom: 2px solid transparent;
+    font-size: 12px;
   }
   .links a:hover {
     background: none;
@@ -184,29 +181,43 @@ img {
   }
   .topinfo-outer {
     background: #771016;
+    padding: 0.5em;
   }
   .top-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    /* padding: 0.5rem 0; */
-    gap: 10px;
-    width: 70%;
+    width: 80%;
   }
-  .contact-info {
+  .contact-info a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 5px;
   }
+  .contact-info a svg {
+    height: 19px;
+  }
   .contact-info a {
     color: #fff;
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: lowercase;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .test .book {
+    font-size: 15px;
+  }
+  .links a {
+    font-size: 15px;
+  }
+  .top-info {
+    width: 65%;
   }
 }
