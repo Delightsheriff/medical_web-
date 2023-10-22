@@ -114,7 +114,7 @@ img {
 /* HEADER */
 @media screen and (min-width: 1000px) {
   .container {
-    max-width: 1170px;
+    max-width: 80%;
     padding: 0 0.5em;
     margin: 0 auto;
   }
@@ -123,6 +123,7 @@ img {
     width: 100%;
     top: 0;
     z-index: 100000000000;
+    /* background: whitesmoke; */
   }
   .logo a {
     display: flex;
@@ -169,6 +170,7 @@ img {
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+    padding: 0.5em;
   }
   .links a {
     transition: none;
@@ -188,9 +190,9 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 0.5rem 0;
+    /* padding: 0.5rem 0; */
     gap: 10px;
-    width: 72%;
+    width: 70%;
   }
   .contact-info {
     display: flex;
@@ -201,7 +203,7 @@ img {
   .contact-info a {
     color: #fff;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
