@@ -110,6 +110,22 @@ img {
   transition: all 0.3s linear;
 }
 
+/* LANDING PAGE */
+main {
+  padding: 1em;
+  background: linear-gradient(
+      180deg,
+      rgba(119, 16, 22, 0.56) 0%,
+      rgba(0, 0, 0, 0.56) 46.35%,
+      rgba(119, 16, 22, 0.56) 76.56%,
+      rgba(0, 0, 0, 0.56) 100%
+    ),
+    url(../images/landing.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* RESPONSIVE  */
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 800px) {
@@ -118,12 +134,12 @@ img {
     padding: 0 0.5em;
     margin: 0 auto;
   }
-  header {
+  /* header {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100000000000;
-  }
+  } */
   .test .book {
     display: block;
     color: #fff;
