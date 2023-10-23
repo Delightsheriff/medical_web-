@@ -111,7 +111,7 @@ img {
 
 /* LANDING PAGE */
 main {
-  padding: 1em;
+  padding: 3em;
   background: linear-gradient(
       180deg,
       rgba(119, 16, 22, 0.56) 0%,
@@ -124,7 +124,71 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.landing-container {
+  padding: 2em 1em;
+  text-align: center;
+  border: 1px solid #fff;
+  border-top: none;
+  position: relative;
+}
+.landing-container p:first-child {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 9.92px;
+  text-transform: capitalize;
+  padding: 0.5em 0;
+}
+.landing-container p:nth-child(2) {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 119%; /* 130.9px */
+  text-transform: capitalize;
+  padding: 0.5em 0;
+}
+.landing-container p span {
+  color: #ff000f;
+}
+.landing-container p:nth-child(3) {
+  padding: 0.5em 0;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140.5%;
+  text-transform: capitalize;
+  padding-bottom: 2em;
+}
+.landing-container .land-book {
+  color: #771016;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.landing-container .land-book {
+  padding: 0.5em;
+  border: none;
+  border-radius: 52px;
+  background: #fff;
+}
+.land-book {
+  position: absolute;
+  left: 20%;
+  bottom: -19px;
+}
 /* RESPONSIVE  */
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 800px) {
@@ -223,6 +287,20 @@ main {
     line-height: normal;
     text-transform: lowercase;
   }
+  main {
+    padding: 4em;
+  }
+  .landing-container {
+    width: 70%;
+    margin: 0 auto;
+
+    /* padding: 3em; */
+  }
+  .land-book {
+    position: absolute;
+    left: 30%;
+    bottom: -19px;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -235,4 +313,8 @@ main {
   .top-info {
     width: 65%;
   }
+  /* .landing-container {
+    width: 50%;
+    margin: 0 auto;
+  } */
 }
