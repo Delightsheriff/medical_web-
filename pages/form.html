@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MEDICAL WEBSITE</title>
+    <title>Book an Appointment</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="../styles/form.css" />
+    <script src="../js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -20,21 +20,21 @@
               <div class="top-info">
                 <div class="contact-info">
                   <a href="mailto:example@example.com"
-                    ><img src="./images/email.svg" alt="" /> Email:
+                    ><img src="../images/email.svg" alt="" /> Email:
                     example@example.com</a
                   >
                 </div>
 
                 <div class="contact-info">
                   <a href="https://www.example.com/location">
-                    <img src="./images/location.svg" alt="" />
+                    <img src="../images/location.svg" alt="" />
                     Location: 123 Main Street, City, Country</a
                   >
                 </div>
 
                 <div class="contact-info">
                   <a href="tel:+1234567890"
-                    ><img src="./images/tel.svg" alt="" /> Phone: +123 456
+                    ><img src="../images/tel.svg" alt="" /> Phone: +123 456
                     7890</a
                   >
                 </div>
@@ -43,12 +43,12 @@
             <!-- nav header -->
             <div class="nav-header">
               <div class="logo">
-                <a href="./index.html"
-                  ><img src="./images/logo.svg" alt="" />Cityview</a
+                <a href="../index.html"
+                  ><img src="../images/logo.svg" alt="" />Cityview</a
                 >
               </div>
               <div class="test">
-                <a href="./pages/form.html" class="book">Make an Appointment</a>
+                <a href="#" class="book">Make an Appointment</a>
                 <button class="nav-toggle">
                   <i class="fas fa-bars icon-large"></i>
                 </button>
@@ -81,5 +81,53 @@
         </div>
       </nav>
     </header>
+
+    <div class="container">
+      <main>
+        <p>Book Appointment</p>
+        <form>
+          <div class="form__input full-width">
+            <input type="text" id="fullname" placeholder="Full Name" />
+            <span id="fullnameError"></span>
+          </div>
+
+          <div id="test">
+            <div class="form__input one">
+              <input type="text" id="email" placeholder="Email" />
+              <span id="emailError"></span>
+            </div>
+
+            <div class="form__input one">
+              <input type="text" id="phone" placeholder="Phone Number" />
+              <span id="phoneError"></span>
+            </div>
+          </div>
+
+          <div class="form__input full-width">
+            <input type="date" id="date" placeholder="Select Date" />
+            <span id="dateError"></span>
+          </div>
+
+          <div class="form__input full-width">
+            <input type="time" id="time" placeholder="Select Time" />
+            <span id="timeError"></span>
+          </div>
+
+          <div class="form__input full-width">
+            <textarea
+              id="message"
+              placeholder="Make note or describe about you"
+            ></textarea>
+            <span id="messageError"></span>
+          </div>
+
+          <div class="form-btn">
+            <button class="btn full-width" id="submitBtn">
+              Make Appointment
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
   </body>
 </html>

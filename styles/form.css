@@ -1,6 +1,6 @@
 /* TYPOGRAPHY */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poller+One&family=Poppins&family=Rufina:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
 /* Global Settings */
 *,
 ::after,
@@ -109,20 +109,73 @@ img {
   transition: all 0.3s linear;
 }
 
-/* LANDING PAGE */
+/* FORM */
 main {
-  padding: 1em;
-  background: linear-gradient(
-      180deg,
-      rgba(119, 16, 22, 0.56) 0%,
-      rgba(0, 0, 0, 0.56) 46.35%,
-      rgba(119, 16, 22, 0.56) 76.56%,
-      rgba(0, 0, 0, 0.56) 100%
-    ),
-    url(../images/landing.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin: 4em 0;
+  background-color: #771016;
+  background-image: url(../images/form-back.svg);
+}
+main p {
+  padding: 1em 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+form {
+  padding: 2em;
+}
+.form__input {
+  margin: 10px 0;
+  padding: 1em 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+  text-transform: capitalize;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 11px;
+  background: #fff;
+}
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form button {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 6px 6px 30px 6px rgba(0, 0, 0, 0.25);
+  color: #771016;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  padding: 10px 0;
 }
 
 /* RESPONSIVE  */
@@ -223,7 +276,16 @@ main {
     line-height: normal;
     text-transform: lowercase;
   }
+  #test {
+    display: flex !important;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .one {
+    flex: 1;
+  }
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .test .book {
