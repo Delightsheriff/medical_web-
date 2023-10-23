@@ -177,6 +177,15 @@ form button {
   text-align: center;
   padding: 10px 0;
 }
+#fullnameError,
+#emailError,
+#phoneError,
+#dateError,
+#timeError,
+#messageError {
+  color: white;
+  font-family: Poppins;
+}
 
 /* RESPONSIVE  */
 /* Medium devices (landscape tablets, 768px and up) */
