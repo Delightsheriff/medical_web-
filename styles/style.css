@@ -267,11 +267,43 @@ main {
   justify-content: space-between;
   gap: 0.3em;
 }
-/* .hurt-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+.treatments {
+  padding: 2em 0;
+}
+.treatments > p {
+  padding: 1em 0;
+  color: #771016;
+  font-family: Rufina;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+.pains {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1em;
+}
+.pain-box {
+  padding: 1em;
+  background: #fff;
+  text-align: center;
+  /* margin: 1em 0; */
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.35);
+}
+.pain-type {
+  color: #771016;
+  font-family: Rufina;
+  font-size: 35px;
+  padding: 0.5em 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
 /* RESPONSIVE  */
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 800px) {
@@ -391,6 +423,9 @@ main {
     justify-content: space-between;
     align-items: center !important	;
   }
+  .pains {
+    grid-template-columns: auto auto;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -423,5 +458,8 @@ main {
   }
   .hurt .land-book {
     font-size: 16px;
+  }
+  .pains {
+    grid-template-columns: auto auto auto;
   }
 }
