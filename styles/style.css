@@ -382,6 +382,98 @@ select {
   gap: 0.5em;
   align-items: center;
 }
+.team {
+  padding: 1em;
+  text-align: center;
+}
+.team > p:first-child {
+  color: #771016;
+  font-family: Rufina;
+  padding: 1em 0;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.team > p:first-child span {
+  color: #000;
+}
+.team > p:nth-child(2) {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  padding-bottom: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.team > p:nth-child(2) span {
+  text-decoration: underline;
+}
+.teams {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.team-box {
+  padding: 1em;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.teams > div:nth-child(2) {
+  background: linear-gradient(0deg, #771016 0%, #771016 100%),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.teams > div:nth-child(2) .team-text p:first-child {
+  color: #fff;
+  text-align: center;
+  font-family: Rufina;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 1em 0 0.5em 0;
+}
+.teams > div:nth-child(2) .team-text p:last-child {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+}
+.team-text p:first-child {
+  color: #17436d;
+  text-align: center;
+  font-family: Rufina;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 1em 0 0.5em 0;
+}
+.team-text p:last-child {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
 /* RESPONSIVE  */
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 800px) {
@@ -523,6 +615,9 @@ select {
   .inp-btn {
     display: block;
   }
+  .teams {
+    grid-template-columns: auto auto;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -557,6 +652,9 @@ select {
     font-size: 16px;
   }
   .pains {
+    grid-template-columns: auto auto auto;
+  }
+  .teams {
     grid-template-columns: auto auto auto;
   }
 }
