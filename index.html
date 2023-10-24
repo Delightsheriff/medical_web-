@@ -164,6 +164,61 @@
           </div>
         </div>
       </section>
+      <section class="appointment">
+        <div class="options">
+          <img src="./images/options.svg" alt="options" />
+        </div>
+        <div class="question">
+          <p>Have a Questions? Chat with porfessional</p>
+          <p>Don't put up with pain! Make an appointment</p>
+          <form id="questions">
+            <div id="temp">
+              <div class="form__input">
+                <input type="text" id="name" placeholder="Name" required />
+                <span id="nameError" class="error"></span>
+              </div>
+
+              <div class="form__input">
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Phone Number"
+                  required
+                />
+                <span id="phoneError" class="error"></span>
+              </div>
+
+              <div class="form__input">
+                <select id="interest" required>
+                  <option value="">Interested In</option>
+                  <option value="Back">Back</option>
+                  <option value="Knee">Knee</option>
+                  <option value="Hip">Hip</option>
+                  <option value="Ankle">Ankle</option>
+                  <option value="Elbow">Elbow</option>
+                  <option value="Shoulder">Shoulder</option>
+                </select>
+                <span id="interestError" class="error"></span>
+              </div>
+
+              <div class="form__input">
+                <input type="time" id="time" required placeholder="Time" />
+                <span id="timeError" class="error"></span>
+              </div>
+            </div>
+
+            <div class="form__input">
+              <input type="checkbox" id="agree" required />
+              <label for="agree">I agree to the terms and conditions</label>
+              <span id="agreeError" class="error"></span>
+            </div>
+
+            <div class="form__input inp-btn">
+              <button class="btn" id="submitBtn" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 </html>
