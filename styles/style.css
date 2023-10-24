@@ -618,6 +618,9 @@ select {
   .teams {
     grid-template-columns: auto auto;
   }
+  .team-box:last-child {
+    grid-column: span 2;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
