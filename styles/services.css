@@ -48,7 +48,6 @@ img {
 
 .nav-center {
   display: block;
-  padding: 1rem;
   background: white;
 }
 .top-info {
@@ -77,6 +76,8 @@ img {
 .links {
   display: block;
   width: 100%;
+  padding: 0;
+  border: 1px solid #000;
 }
 .links a {
   display: block;
@@ -88,6 +89,7 @@ img {
   font-style: normal;
   line-height: normal;
   text-transform: capitalize;
+  width: 100%;
 }
 .links a:hover {
   background: white;
@@ -105,7 +107,7 @@ img {
 }
 
 .show-links {
-  height: 12.29rem;
+  height: 12.5rem;
   transition: all 0.3s linear;
 }
 
@@ -115,7 +117,6 @@ main {
   padding: 1em;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid #000;
 }
 .land {
   padding: 2em;
