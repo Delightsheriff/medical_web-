@@ -474,6 +474,65 @@ select {
   line-height: normal;
   text-transform: capitalize;
 }
+
+/* review */
+.review {
+  background: rgba(119, 16, 22, 0.1);
+  padding: 1em;
+}
+.review > p {
+  color: #771016;
+  text-align: center;
+  font-family: Rufina;
+  font-size: 44px;
+  padding: 1em 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.review > p span {
+  color: #000;
+}
+.stars .fa-star,
+.fa-star-half {
+  color: #ffc633;
+}
+.review-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 20px;
+  background: #771016;
+  backdrop-filter: blur(9px);
+}
+.review-box p {
+  padding: 0.5em 0;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170.523%; /* 34.105px */
+}
+.top p:nth-child(2) {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.top p:nth-child(3) {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* RESPONSIVE  */
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 800px) {
@@ -621,6 +680,31 @@ select {
   .team-box:last-child {
     grid-column: span 2;
   }
+  .review-box {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+
+    /* display: none !important; */
+  }
+  .top {
+    flex: 1;
+    padding: 0;
+    border-right: 1px solid white;
+  }
+  #temp {
+    flex: 2;
+    text-align: left;
+  }
+  .top p {
+    text-align: left;
+    display: block;
+    padding: 0;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -659,5 +743,8 @@ select {
   }
   .teams {
     grid-template-columns: auto auto auto;
+  }
+  .team-box:last-child {
+    grid-column: auto; /* Reset grid-column to its default value */
   }
 }
