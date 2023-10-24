@@ -597,7 +597,7 @@ footer {
   height: 40px;
 }
 .footer-col {
-  padding: 1em;
+  padding: 2em;
 }
 .footer-col p {
   color: #fff;
@@ -660,7 +660,7 @@ footer {
   justify-content: space-between;
   gap: 0.1em;
   position: absolute;
-  bottom: 80px;
+  bottom: 70px;
   right: 10px;
 }
 /* RESPONSIVE  */
