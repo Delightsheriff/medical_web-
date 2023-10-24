@@ -225,6 +225,53 @@ main {
   line-height: normal;
   text-transform: capitalize;
 }
+/* HURT */
+.hurt {
+  background: #771016;
+  padding: 1em;
+}
+.hurt p:first-child {
+  color: #fff;
+  font-family: Rufina;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.hurt p:nth-child(2) {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  padding-bottom: 2em;
+}
+.hurt .land-book {
+  color: #771016;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.hurt .land-book {
+  padding: 0.5em;
+  border: none;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3em;
+}
+/* .hurt-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 /* RESPONSIVE  */
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 800px) {
@@ -329,6 +376,21 @@ main {
   .landing-container {
     margin: 0 auto;
   }
+  .hurt p:first-child {
+    font-size: 22px;
+  }
+  .hurt p:nth-child(2) {
+    font-size: 12px;
+    padding-bottom: 0;
+  }
+  .hurt .land-book {
+    font-size: 14px;
+  }
+  .hurt {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center !important	;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -351,5 +413,15 @@ main {
   .special p:last-child {
     width: 70%;
     margin: 0 auto;
+  }
+  .hurt p:first-child {
+    font-size: 25px;
+  }
+  .hurt p:nth-child(2) {
+    font-size: 16px;
+    padding-bottom: 0;
+  }
+  .hurt .land-book {
+    font-size: 16px;
   }
 }
