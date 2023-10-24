@@ -377,6 +377,11 @@ select {
   line-height: normal;
   text-transform: capitalize;
 }
+#terms {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
 /* RESPONSIVE  */
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 800px) {
