@@ -478,14 +478,14 @@ select {
 /* review */
 .review {
   background: rgba(119, 16, 22, 0.1);
-  padding: 1em;
+  padding: 2em;
 }
 .review > p {
   color: #771016;
   text-align: center;
   font-family: Rufina;
   font-size: 44px;
-  padding: 1em 0;
+  padding: 0.5em 0;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -532,7 +532,82 @@ select {
   font-weight: 400;
   line-height: normal;
 }
+.expert {
+  padding: 3em 0;
+  text-align: center;
+}
+.expert p:first-child {
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
 
+.expert p:nth-child(2) {
+  color: #771016;
+  font-family: Rufina;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 1em 0;
+}
+.expert p span {
+  color: #000;
+}
+.carousel {
+  margin: 1em 0;
+}
+.all-reviews button {
+  padding: 0.7em;
+  background: #771016;
+  border: none;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.address {
+  padding: 1em;
+}
+.loc {
+  background: #771016;
+  padding: 1em;
+  text-align: justify;
+}
+.address .loc p:first-child,
+.address .loc p:nth-child(3),
+.address .loc p:nth-child(5) {
+  color: #fff;
+  font-family: Rufina;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.address .loc p:nth-child(2),
+.address .loc p:nth-child(4),
+.address .loc p:nth-child(6) {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+iframe {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
 /* RESPONSIVE  */
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 800px) {
@@ -704,6 +779,15 @@ select {
     text-align: left;
     display: block;
     padding: 0;
+  }
+  .address {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  .map,
+  .loc {
+    flex: 1;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
